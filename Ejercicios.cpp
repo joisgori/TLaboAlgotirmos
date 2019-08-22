@@ -3,6 +3,8 @@ using namespace std;
 
 void sumaNumeros(int i, int j);
 
+int potencia(int x, int n);
+
 //TAREA 1 DE LABO:
 //DEFINO MIS MATRICES:
 	int MA[3][3] = {{1,2,1}, 
@@ -28,6 +30,17 @@ int main(){
 		cout << endl;
 	}
 	
+	//PARA EL SEGUNDO EJERCICIO
+	int x, n;
+	
+	cout << "Ingrese los valores de la base y su exponente: " << endl;
+	cout << "base: ";
+	cin >> x;
+	cout << endl;
+	cout << "exponente: ";
+	cin >> n;
+	cout << potencia(x, n);
+	
 	return 0;
 }
 
@@ -42,6 +55,15 @@ void sumaNumeros(int i, int j){
 			j++;
 		}
 		sumaNumeros(i,j);
+	}
+}
+
+int potencia(int x, int n){
+	if(n>0){
+		return x * potencia(x, n-1);
+	}
+	else{
+		return 1;
 	}
 }
 
