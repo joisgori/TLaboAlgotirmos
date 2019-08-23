@@ -8,9 +8,9 @@ int numMenor(int i); //Para el tercer ejercicio
 
 //Variables globales para EJ 1:*******
 //DEFINO MIS MATRICES:
-int MA[3][3] = {{1,2,1}, 
-				        {1,2,1},
-				        {1,1,1}};	
+int MA[3][3] = {{1,2,1},
+		{1,2,1},
+		{1,1,1}};	
 int MB[3][3] = {{1,2,1},
                 {1,2,1},
                 {1,1,1}};
